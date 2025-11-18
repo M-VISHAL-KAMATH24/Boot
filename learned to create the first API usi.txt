@@ -1,0 +1,5 @@
+learned to create the first API using the @RestController and @GetMapping annotations.
+Also learned how to create an bean which is an object managed by the spring container using the @Component annotation.
+in order to used the bean created use the CommandLineRunner to implement the main class and then use @AutoWired or use the constructor also use @Override.
+we can use this beans for the loose coupling and using the @ConditionalOnProperty(name,havingValue) helps for the dynamic and efficeint changing.
+
