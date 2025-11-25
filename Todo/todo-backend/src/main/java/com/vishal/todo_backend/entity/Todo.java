@@ -1,4 +1,4 @@
-package com.vishal.todobackend.entity;
+package com.vishal.todo_backend.entity;
 
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
