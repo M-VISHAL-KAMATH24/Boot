@@ -3,7 +3,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.vishal.basic.repository.UserRepository;
-import com.vishal.basic.service.UserService;;
+import com.vishal.basic.service.UserService;
+import com.vishal.basic.service.UserService2;
 
 
 @RestController
@@ -13,6 +14,8 @@ public class UserController {
     public UserService userService;
     @Autowired
     public UserRepository userRepository;
+    @Autowired
+    public UserService2 userService2;
 
     @GetMapping("/profile")
     public String getProfile(){
@@ -25,6 +28,10 @@ public class UserController {
     @GetMapping("/email")
     public String getEmail(){
         return userRepository.getEmail();
+    }
+    @GetMapping("/getconfig")
+    public String getConfiguration(){
+        return userService2.get_config();
     }
     
 }
